@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="132.0" layoutY="98.0" prefHeight="472.0" prefWidth="663.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="30.0" prefWidth="663.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="35.0" prefWidth="1100.0" styleClass="top-form" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="7.0" text="Créer Chéque ">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="1352.0" layoutY="-2.0" minHeight="20.0" minWidth="52.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="55.0" styleClass="button-close" stylesheets="@style.css" textAlignment="RIGHT" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="670.0" prefWidth="248.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutY="103.0" prefHeight="669.6" prefWidth="248.0" styleClass="nav-form" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="63.0" layoutY="79.0" styleClass="Bienvenue-label" stylesheets="@style.css" text="Bienvenue " textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="23.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets right="23.0" />
+                                 </opaqueInsets>
+                              </Label>
+                              <Label layoutX="63.0" layoutY="113.0" styleClass="Client-label" stylesheets="@style.css" text="Client@gmail.com" textFill="#fcfafa">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="124.0" layoutY="149.0" startX="-100.0" stroke="WHITE" />
+                              <Button cache="true" cacheHint="SCALE" centerShape="false" layoutX="35.0" layoutY="207.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="202.0" styleClass="nav-btn" stylesheets="@style.css" text="  Home " textFill="WHITE">
+                                 <graphic>
+                                    <Icon content="HOME" />
+                                 </graphic>
+                              </Button>
+                              <Button cache="true" cacheHint="SCALE" centerShape="false" layoutX="20.0" layoutY="258.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="209.0" styleClass="nav-btn" stylesheets="@style.css" text="Demande d'un Chéque " textFill="WHITE">
+                                 <graphic>
+                                    <Icon content="ADD" prefHeight="52.0" prefWidth="27.0" viewOrder="1.0">
+                                       <padding>
+                                          <Insets bottom="40.0" />
+                                       </padding>
+                                    </Icon>
+                                 </graphic>
+                              </Button>
+                              <Button cache="true" cacheHint="SCALE" centerShape="false" layoutX="19.0" layoutY="311.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="223.0" styleClass="nav-btn" stylesheets="@style.css" text="Demande d'un Virement " textFill="WHITE">
+                                 <graphic>
+                                    <Icon content="ADD" prefHeight="52.0" prefWidth="27.0" viewOrder="1.0">
+                                       <padding>
+                                          <Insets bottom="40.0" />
+                                       </padding>
+                                    </Icon>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="24.0" layoutY="615.0" mnemonicParsing="false" stylesheets="@style.css" textFill="#faf8f8">
+                                 <graphic>
+                                    <Icon content="REPLY" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="logout" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </Button>
+                              <Label layoutX="96.0" layoutY="627.0" styleClass="logout-label" stylesheets="@style.css" text="Sign Out " textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="114.0" layoutY="55.0" prefHeight="669.6" prefWidth="859.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="648.0" prefWidth="348.0" stylesheets="@style.css">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane layoutX="84.0" layoutY="14.0" prefHeight="72.0" prefWidth="186.0" stylesheets="@style.css">
+                                       <styleClass>
+                                          <String fx:value="shadow" />
+                                          <String fx:value="white-bg" />
+                                       </styleClass>
+                                       <children>
+                                          <ImageView fx:id="ajouterCin_imageView" fitHeight="77.0" fitWidth="169.0" layoutX="8.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Button fx:id="importerBtn" layoutX="2.0" layoutY="36.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="182.0" styleClass="importer-btn" stylesheets="@style.css" />
+                                          <Label layoutX="66.0" layoutY="42.0" styleClass="importer-label" stylesheets="@style.css" text="Importer " />
+                                       </children>
+                                    </AnchorPane>
+                                    <Label layoutX="36.0" layoutY="114.0" text="Rib : ">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="Rib" layoutX="77.0" layoutY="111.0" prefHeight="26.0" prefWidth="206.0" styleClass="textfield" stylesheets="@style.css" />
+                                    <TextField fx:id="Cin" layoutX="77.0" layoutY="165.0" prefHeight="26.0" prefWidth="209.0" styleClass="textfield" stylesheets="@style.css" />
+                                    <Label layoutX="37.0" layoutY="169.0" text="Cin : " />
+                                    <Label layoutX="14.0" layoutY="217.0" text="Nom et Prenom :" />
+                                    <TextField fx:id="NomPrenom" layoutX="122.0" layoutY="214.0" prefHeight="26.0" prefWidth="209.0" styleClass="textfield" stylesheets="@style.css" />
+                                    <Label layoutX="30.0" layoutY="273.0" text="Email : " />
+                                    <TextField fx:id="Email" layoutX="77.0" layoutY="269.0" prefHeight="26.0" prefWidth="209.0" styleClass="textfield" stylesheets="@style.css" />
+                                    <Label layoutX="30.0" layoutY="324.0" text="Date  : " />
+                                    <TextField fx:id="Date" layoutX="77.0" layoutY="320.0" prefHeight="26.0" prefWidth="209.0" styleClass="textfield" stylesheets="@style.css" />
+                                    <Label layoutX="8.0" layoutY="377.0" text="Beneficiaire   : " />
+                                    <ComboBox fx:id="beneficiaire" layoutX="122.0" layoutY="372.0" prefWidth="150.0" styleClass="textfield" stylesheets="@style.css" />
+                                    <Label layoutX="8.0" layoutY="437.0" text="Montant   : " />
+                                    <TextField fx:id="montant" layoutX="77.0" layoutY="433.0" prefHeight="26.0" prefWidth="209.0" styleClass="textfield" stylesheets="@style.css" />
+                                    <Button layoutX="35.0" layoutY="512.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="118.0" styleClass="ajouter-btn" stylesheets="@style.css" text="Ajouter " />
+                                    <Button layoutX="197.0" layoutY="512.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="118.0" styleClass="modifier-btn" stylesheets="@style.css" text="Modifier " />
+                                    <Button layoutX="115.0" layoutY="582.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="118.0" styleClass="supprimer-btn" stylesheets="@style.css" text="Supprimer " />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="371.0" layoutY="12.0" prefHeight="648.0" prefWidth="774.0" stylesheets="@style.css">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView cache="true" layoutX="7.0" layoutY="85.0" prefHeight="551.0" prefWidth="766.0" styleClass="importer-btn" stylesheets="@style.css">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="Rib " />
+                                        <TableColumn prefWidth="75.0" text="Cin" />
+                                          <TableColumn minWidth="20.0" prefWidth="120.0" text="Nom et Prenom " />
+                                          <TableColumn minWidth="20.0" prefWidth="120.0" text="Email " />
+                                          <TableColumn minWidth="20.0" prefWidth="100.0" text="Date " />
+                                          <TableColumn minWidth="20.0" prefWidth="100.0" text="Beneficiaire " />
+                                          <TableColumn minWidth="20.0" prefWidth="100.0" text="Montant " />
+                                          <TableColumn minWidth="20.0" prefWidth="100.0" text="Resultat " />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
